@@ -1,0 +1,90 @@
+* {margin: 0; padding: 0; font-size: 100%; box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+nav,ul {list-style: none;}
+a {text-decoration: none;cursor: pointer;opacity: 0.9;}
+a:hover {opacity: 1;}
+
+/* HEADER*/
+ header {width: 100%; position: absolute; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center;
+padding: 20px 50px;background-color: #fff;}
+header img {width: 200px;}
+header nav {display: flex;}]
+header li a {color: purple;}
+header li {margin: 0 15px;}
+header li:first-child {margin-left: 0;}
+header li:last-child {margin-right: 0;}
+@media (max-width: 700px){
+    header {flex-direction: column;}
+    header img {margin-bottom: 15px;}
+}
+
+/*HERO*/
+
+.hero {background-image: url(../img/taylor-swift-07.jpg);background-size: cover; min-height: 100vh; color: #fff; display: flex;
+justify-content:center;align-items: center;flex-direction: column; text-align: center;}
+.hero h1 {font-size: 3.2rem;margin-bottom: 15px;}
+.hero h3 {font-size: 2rem;margin-bottom: 15px;}
+.hero .btn {background-color: #fff; border-radius: 4px;background-color: rgb(221, 221, 221); padding: 20px 50px;text-transform: uppercase;}
+@media (max-width: 700px){
+    .hero h1 {font-size: 2.5rem;}
+    .hero h3 {font-size: 1.5rem;}
+}
+
+/*videos tour*/
+.Videos-Tour {display: flex; flex-direction: column;align-items: center; padding: 100px 50px;}
+.Videos-Tour h3 {font-size: 2rem; margin-bottom: 35px;background-color:rgba(233, 204, 210, 0.664);text-align: center;}
+.Videos-Tour p {max-width: 800px;margin-bottom: 35px;background-color:rgba(90, 245, 250, 0.253);text-align: center;}
+.Videos-Tour hr {width: 200px; height: 2px; background-color:rgba(253, 107, 197, 0.815);margin-bottom: 70px;border: none;}
+
+.Videos-Tour .grid {width: 100%;display: flex; flex-wrap: wrap;}
+.Videos-Tour .grid li {height: 350px; padding: 20px; border-radius: 4px; background-clip: content-box; background-size: cover; background-position: center;}
+.Videos-Tour .grid li.small {flex-basis: 40%;}
+.Videos-Tour .grid li.large {flex-basis: 60%;}
+
+@media (max-width: 700px){
+    .Videos-Tour .grid li.small, .Videos-Tour .grid li.large {flex-basis: 100%;} 
+
+
+}
+
+/*textos*/
+
+.Novo-clipe {background-color:rgba(233, 204, 210, 0.664) ;  display: flex; flex-direction: column; align-items: center; padding: 100px 50px;}
+.Novo-clipe h3 {font-size: 2rem; margin-bottom: 35px;color: rgba(12, 12, 12, 0.719);text-align: center;}
+.Novo-clipe p {max-width: 800px; margin-bottom: 35px;color: rgba(12, 12, 12, 0.719);text-align: center;}
+.Novo-clipe hr {width: 200px; height: 2px; background-color:rgba(253, 107, 197, 0.815);margin-bottom: 70px;border: none;}
+
+.Novo-clipe .grid {width: 100%; display: flex;}
+.Novo-clipe .grid li {padding: 0 30px; text-align: center;}
+.Novo-clipe .grid li i {color: rgb(106, 177, 224); font-size: 3.5rem; margin-bottom: 30px;}
+.Novo-clipe .grid li h4 {font-size: 1.5rem; color: rgb(250, 20, 154); margin-bottom: 30px;}
+.Novo-clipe .grid li p {color: rgba(12, 12, 12, 0.719);}
+
+@media (max-width: 850px){
+    .Novo-clipe .grid {flex-direction: column;}
+
+
+}
+
+/*NEWSLETTER*/
+
+.newsletter {display: flex;flex-direction: column;align-items: center;padding: 100px 50px;}
+.newsletter h3 {font-size: 2rem; margin-bottom: 35px;color: rgba(12, 12, 12, 0.719);text-align: center;}
+.newsletter p {max-width: 800px; margin-bottom: 35px;color: rgba(12, 12, 12, 0.719);text-align: center;}
+.newsletter hr {width: 200px; height: 2px; background-color:rgba(253, 107, 197, 0.815);margin-bottom: 70px;border: none;}
+.newsletter form {display: flex; align-items: center;justify-content: center;flex-wrap: wrap; width: 80%;max-width: 800px;}
+.newsletter input {padding: 15px; border: 1px solid  rgb(106, 177, 224) ; border-radius: 4px; margin-right: 15px; flex: 1}
+.newsletter button {padding: 15px;background-color: rgb(106, 177, 224); color:#fff; text-transform: uppercase; border: none;
+border-radius: 4px; cursor: pointer;}
+
+@media (max-width: 700px){
+    .newsletter input {flex-basis: 100%; margin-bottom: 15px;}
+}
+
+    /* FOOTER */
+    footer {display: flex;flex-direction: column;background-color: rgb(106, 177, 224);padding: 50px 0;align-items: center;}
+    footer ul {display: flex; margin-bottom: 25px;}
+    footer ul li {margin-right: 10px;}
+    footer ul li:last-child {margin-right: 0;}
+    footer ul li a {color: #fff;font-size: 2rem;}
+    footer p {color: #fff; text-align: center;}
+
